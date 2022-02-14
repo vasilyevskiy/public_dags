@@ -38,7 +38,7 @@ def get_data(dt) -> dict:
     res = raw_data['rates']
     res['pair'] = 'BTC/USD'
     res['date'] = raw_data['date']
-    res['value'] = res.pop('USD')
+    res['value'] = res.pop(tgt)
     return res
 
 
